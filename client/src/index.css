@@ -1,0 +1,36 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to right, #60a5fa, #4885db);
+}
+
+/* Add this in your custom CSS file (e.g., styles.css) */
+.no-spinner {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+/* For WebKit browsers */
+.no-spinner::-webkit-outer-spin-button,
+.no-spinner::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.sidebar {
+  max-height: 15rem; /* Maximum height */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.transactions-table {
+  max-height: 25rem; /* Adjust as needed based on your design */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
