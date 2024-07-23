@@ -46,7 +46,7 @@ const ConfirmTransfer = () => {
       }
     } catch (error) {
       console.error("Failed to confirm transfer:", error);
-      toast.error(error.response.data.error);
+      toast.error("Server error occurred, please try again later.");
     } finally {
       setLoading(false);
     }
