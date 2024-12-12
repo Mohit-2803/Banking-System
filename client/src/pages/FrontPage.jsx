@@ -67,13 +67,13 @@ const FrontPage = () => {
             to="/login"
             className="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition-colors duration-300"
           >
-            Login
+            Login to personal banking
           </Link>
           <Link
             to="/signup"
             className="bg-green-500 text-white px-6 py-3 rounded-lg hover:bg-green-600 transition-colors duration-300"
           >
-            Sign Up
+            Sign Up to internet banking
           </Link>
         </div>
       </div>

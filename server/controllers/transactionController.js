@@ -194,6 +194,10 @@ const createReceivedTransaction = async (
     // Save the transaction for the receiver
     await transaction.save();
 
+    // Update the receiver's account balance
+    receiverAccount.balance += Number(amount);
+    await receiverAccount.save();
+
     // Send mail to receiver that amount is received to your bank
     const currentDate = new Date();
     const transactionDate = currentDate.toLocaleDateString("en-IN", {
